@@ -22,7 +22,7 @@ public class ExampleRobolectricTest {
     public ActivityScenarioRule<MainActivity> scenarioRule = new ActivityScenarioRule<>(MainActivity.class);
 
     @Test
-    public void test_startsWithNoResult() {
+    public void test_starts_with_no_result() {
         // Create a "scenario" to move through the activity lifecycle.
         // https://developer.android.com/guide/components/activities/activity-lifecycle
         ActivityScenario<MainActivity> scenario = scenarioRule.getScenario();
@@ -38,8 +38,9 @@ public class ExampleRobolectricTest {
     }
 
     @Test
-    public void test_addsNumbers_and_not_something_else() {
+    public void test_adds_numbers_and_not_something_else() {
         // This is an INTEGRATION test, as we're testing multiple units!
+        // This test SHOULD fail. You need to fix it as an exercise!
 
         ActivityScenario<MainActivity> scenario = scenarioRule.getScenario();
 

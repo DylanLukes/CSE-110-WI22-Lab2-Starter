@@ -55,7 +55,8 @@ public class ExampleRobolectricTest {
             num1View.setText("13");
             num2View.setText("42");
             equalsButton.performClick();
-            assertEquals("55", resultView.getText().toString());
+            int result = Utils.toIntNullsafe(resultView.getText().toString());
+            assertEquals(55, result);
         });
     }
 }

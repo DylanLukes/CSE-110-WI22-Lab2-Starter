@@ -52,8 +52,8 @@ public class ExampleRobolectricTest {
             Button equalsButton = activity.findViewById(R.id.equals_button);
             TextView resultView = activity.findViewById(R.id.result);
 
-            num1View.setText(13);
-            num2View.setText(42);
+            num1View.setText("13");
+            num2View.setText("42");
             equalsButton.performClick();
             assertEquals("55", resultView.getText().toString());
         });

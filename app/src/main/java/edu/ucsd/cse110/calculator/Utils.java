@@ -3,13 +3,13 @@ package edu.ucsd.cse110.calculator;
 public class Utils {
     public static boolean isEmpty(String str) {
         if (str == null) {
-            return false;
+            return true;
         }
         else if (str.equals("")) {
-            return false;
+            return true;
         }
         else {
-            return true;
+            return false;
         }
     }
 

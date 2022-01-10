@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab2App</string>
+    <string name="plus">+</string>
+    <string name="equals">=</string>
+</resources>

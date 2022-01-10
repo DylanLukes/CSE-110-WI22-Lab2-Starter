@@ -41,6 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean hasResult() {
         TextView view = this.findViewById(R.id.result);
-        return Utils.isEmpty(view.getText().toString());
+        return !Utils.isEmpty(view.getText().toString());
     }
 }
